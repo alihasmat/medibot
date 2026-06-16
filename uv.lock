@@ -1224,6 +1224,7 @@ name = "medibot"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "bcrypt" },
     { name = "docling" },
     { name = "fastapi" },
     { name = "fastembed" },
@@ -1240,6 +1241,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "bcrypt", specifier = ">=5.0.0" },
     { name = "docling", specifier = ">=2.102.2" },
     { name = "fastapi", specifier = ">=0.137.1" },
     { name = "fastembed", specifier = ">=0.8.0" },
