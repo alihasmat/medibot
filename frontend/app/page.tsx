@@ -106,7 +106,7 @@ export default function Home() {
               opacity: 0.4,
             }}
           />
-          <h1 style={{ ...heading, color: C.primary }} className="text-4xl">
+          <h1 style={{ ...heading, fontWeight: 700, color: C.primary }} className="text-4xl">
             MediBot
           </h1>
           <div
@@ -131,6 +131,7 @@ export default function Home() {
                   borderRadius: RADIUS,
                   border: `2px solid ${C.primary}33`,
                   color: C.text,
+                  cursor: "pointer",
                 }}
                 className="flex items-center justify-between px-5 py-3 text-left transition-all hover:shadow-md"
                 onMouseEnter={(e) => {
@@ -142,7 +143,7 @@ export default function Home() {
                   e.currentTarget.style.background = "transparent";
                 }}
               >
-                <span style={heading} className="font-medium text-lg">
+                <span style={{ fontFamily: "Helvetica, Arial, sans-serif" }} className="font-medium text-lg">
                   {a.label}
                 </span>
                 <span className="text-xs" style={{ color: C.secondary }}>
@@ -175,7 +176,7 @@ export default function Home() {
         className="px-8 py-4 flex items-center justify-between sticky top-0 z-10"
       >
         <div className="flex items-center gap-4">
-          <span style={{ ...heading, color: C.primary }} className="text-2xl">
+          <span style={{ ...heading, fontWeight: 700, color: C.primary }} className="text-2xl">
             MediBot
           </span>
           <span
@@ -208,7 +209,7 @@ export default function Home() {
           <button
             onClick={() => setSession(null)}
             className="ml-3 text-xs hover:underline"
-            style={{ color: C.secondary }}
+            style={{ color: C.secondary, cursor: "pointer" }}
           >
             Sign out
           </button>
@@ -369,6 +370,7 @@ export default function Home() {
               color: C.surface,
               borderRadius: RADIUS,
               boxShadow: SHADOW,
+              cursor: "pointer",
             }}
             className="px-6 py-3 font-medium disabled:opacity-50 transition-opacity"
           >

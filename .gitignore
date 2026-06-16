@@ -5,3 +5,4 @@ __pycache__/
 data/
 qdrant_data/
 qdrant_models/
+node_modules/
